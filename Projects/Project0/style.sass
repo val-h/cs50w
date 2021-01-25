@@ -1,3 +1,5 @@
+$link-color: black;
+
 @media (max-width: 600px) {
     /* Mobile first */
 }
@@ -47,7 +49,8 @@ main {
     box-shadow: 0 0 3px 1px gray;
 }
 
-#search-button {
+// Template for search buttons
+$search-btn {
     background-color: rgb(236, 236, 236);
     margin: 25px 25px 0 0;
     font-size: 14px;
@@ -55,20 +58,22 @@ main {
     min-width: 54px;
     height: 36px;
     cursor: pointer;
+    }
+
+#search-button {
+    extends %$search-btn;
+}
+    
+#lucky-button {
+    extends %$search-btn;
 }
 
-#search-button:hover {
+#search-button:hover, #lucky-button:hover {
     border: 1px solid lightgray;
     box-shadow: 0 0 2px 1px lightgray;
 }
 
-#lucky-button {
-    /* placeholder, will implement sass */
-    cursor: crosshair;
-}
 
 img {
     margin-bottom: 30px;
 }
-
-/* TODO: for next commit, use sass - inheritance, and finish the project */

@@ -1,79 +1,68 @@
-$link-color: black;
+$link-color: black
 
-@media (max-width: 600px) {
-    /* Mobile first */
-}
+// @media (max-width: 600px) {
+//     /* Mobile first */
+// }
 
-@media (min-width: 601px) {
-    /* Desktop second */
-}
+// @media (min-width: 601px) {
+//     /* Desktop second */
+// }
 
-#container {
-    display: grid;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.link-buttons {
-    text-align: right;
-    margin: 10px 20px 0 0
-}
-
-a {
-    color: black;
-    padding: 10px;
-    font-size: 13px;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-main {
-    margin-top: 290px;
-    text-align: center;
-}
-
-#search-bar {
-    width: 484px;
-    height: 44px;
-    border: 1px solid lightgray;
-    border-radius: 24px;
-    padding-left: 15px;
-}
-
-#search-bar:hover {
-    box-shadow: 0 0 3px 1px gray;
-}
+// #container {
+//     display: grid;
+// }
 
 // Template for search buttons
-$search-btn {
-    background-color: rgb(236, 236, 236);
-    margin: 25px 25px 0 0;
-    font-size: 14px;
-    border-radius: 7px;
-    min-width: 54px;
-    height: 36px;
-    cursor: pointer;
-    }
+%search-btn
+    background-color: rgb(236, 236, 236)
+    margin: 25px 25px 0 0
+    font-size: 14px
+    border-radius: 7px
+    min-width: 54px
+    height: 36px
 
-#search-button {
-    extends %$search-btn;
-}
+body
+    font-family: Arial, Helvetica, sans-serif
+
+
+.link-buttons
+    text-align: right
+    margin: 10px 20px 0 0
+
+a
+    color: black
+    padding: 10px
+    font-size: 13px
+    text-decoration: none
+
+a:hover
+    text-decoration: underline
+
+main
+    margin-top: 290px
+    text-align: center
+
+#search-bar
+    width: 484px
+    height: 44px
+    border: 1px solid lightgray
+    border-radius: 24px
+    padding-left: 15px
+
+#search-bar:hover
+    box-shadow: 0 0 3px 1px gray
+
+#search-button
+    extends %search-btn
+    cursor: pointer
     
-#lucky-button {
-    extends %$search-btn;
-}
+#lucky-button
+    extends %search-btn
+    cursor: crosshair
 
-#search-button:hover, #lucky-button:hover {
-    border: 1px solid lightgray;
-    box-shadow: 0 0 2px 1px lightgray;
-}
+#search-button:hover, #lucky-button:hover
+    border: 1px solid lightgray
+    box-shadow: 0 0 2px 1px lightgray
 
-
-img {
-    margin-bottom: 30px;
-}
+img
+    margin-bottom: 30px

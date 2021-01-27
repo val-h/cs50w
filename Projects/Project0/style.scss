@@ -1,0 +1,98 @@
+$link-color: black;
+$background-color: lightgray;
+
+// @media (max-width: 600px) {
+//     /* Mobile first */
+// }
+
+// @media (min-width: 601px) {
+//     /* Desktop second */
+// }
+
+// #container {
+//     display: grid;
+// }
+
+// Template for search buttons
+%search-btn {
+    background-color: rgb(236, 236, 236);
+    margin: 25px 25px 0 0;
+    font-size: 14px;
+    border-radius: 7px;
+    min-width: 54px;
+    height: 36px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link-buttons {
+    text-align: right;
+    margin: 10px 20px 0 0;
+}
+
+header {
+    a {
+        color: black;
+        padding: 10px;
+        font-size: 13px;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+main {
+    margin-top: 290px;
+    text-align: center;
+
+    p {
+        font-size: 12px;
+    }
+
+    a {
+        margin: 0 10px;
+    }
+}
+
+#search-bar {
+    width: 484px;
+    height: 44px;
+    border: 1px solid $background-color;
+    border-radius: 24px;
+    padding-left: 15px;
+}
+
+#search-bar:hover {
+    box-shadow: 0 0 3px 1px gray;
+}
+
+#search-button {
+    @extend %search-btn;
+    cursor: pointer;
+}
+
+#lucky-button {
+    @extend %search-btn;
+    cursor: crosshair;
+}
+
+#search-button:hover, #lucky-button:hover {
+    @extend %search-btn;
+    border: 1px solid $background-color;
+    box-shadow: 0 0 2px 1px $background-color;
+}
+
+img {
+    margin-bottom: 30px;
+}
+
+// Footer
+.location-bar {
+    width: 100%;
+    background-color: $background-color;
+    margin: auto -10px;
+}

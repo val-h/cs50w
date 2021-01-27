@@ -1,3 +1,12 @@
+#search-button:hover, #lucky-button:hover, #lucky-button, #search-button {
+  background-color: #ececec;
+  margin: 25px 25px 0 0;
+  font-size: 14px;
+  border-radius: 7px;
+  min-width: 54px;
+  height: 36px;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,20 +16,25 @@ body {
   margin: 10px 20px 0 0;
 }
 
-a {
+header a {
   color: black;
   padding: 10px;
   font-size: 13px;
   text-decoration: none;
 }
-
-a:hover {
+header a:hover {
   text-decoration: underline;
 }
 
 main {
   margin-top: 290px;
   text-align: center;
+}
+main p {
+  font-size: 12px;
+}
+main a {
+  margin: 0 10px;
 }
 
 #search-bar {
@@ -38,9 +52,11 @@ main {
 #search-button {
   cursor: pointer;
 }
+
 #lucky-button {
   cursor: crosshair;
 }
+
 #search-button:hover, #lucky-button:hover {
   border: 1px solid lightgray;
   box-shadow: 0 0 2px 1px lightgray;
@@ -48,6 +64,12 @@ main {
 
 img {
   margin-bottom: 30px;
+}
+
+.location-bar {
+  width: 100%;
+  background-color: lightgray;
+  margin: auto -10px;
 }
 
 /*# sourceMappingURL=style.css.map */

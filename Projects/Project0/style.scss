@@ -25,6 +25,8 @@ $background-color: lightgray;
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    // min-height: 100%;
+    // position:relative;
 }
 
 .link-buttons {
@@ -55,6 +57,12 @@ main {
 
     a {
         margin: 0 10px;
+    }
+}
+
+header {
+    div{
+        width: 100%;
     }
 }
 
@@ -91,8 +99,9 @@ img {
 }
 
 // Footer
-.location-bar {
-    width: 100%;
+.location-bar, .legal-bar {
+    position: absolute;
+    bottom: 0;
     background-color: $background-color;
     margin: auto -10px;
 }

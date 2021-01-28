@@ -37,6 +37,10 @@ main a {
   margin: 0 10px;
 }
 
+header div {
+  width: 100%;
+}
+
 #search-bar {
   width: 484px;
   height: 44px;
@@ -66,8 +70,9 @@ img {
   margin-bottom: 30px;
 }
 
-.location-bar {
-  width: 100%;
+.location-bar, .legal-bar {
+  position: absolute;
+  bottom: 0;
   background-color: lightgray;
   margin: auto -10px;
 }

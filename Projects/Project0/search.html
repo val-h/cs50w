@@ -7,52 +7,56 @@
     </head>
     <body>
         <!-- THe grid container that holds the core layout of the page. -->
-        <header>
-            <!-- Header portion -->
-            <div class="link-buttons">
-                <a href="search_image.html">Images</a>
-                <a href="search_advanced.html">Advanced Search</a>
-            </div>
-        </header>
-
-        <main>
-            <!-- LOGO -->
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-            
-            <!-- Search bar and buttons -->
-            <form action="https://google.com/search">
-                <input id="search-bar" type="text" placeholder="Search on the web" name="q">
-                <br>
-                <input class="search-button" type="submit" value="Google Search">
-                <input class="search-button" type="submit" value="I'm Feeling Lucky">
-            </form>
-
-            <!-- Different Languages -->
-            <p>Google.com offered in: 
-                <a href="#">German</a>
-                <a href="#">French</a>
-                <a href="#">Italian</a>
-                <a href="#">Russian</a>
-            </p>
-        </main>
-
-        <footer>
-            <!-- TODO -->
-            <div class="location-bar">
-                United Kingdom
-            </div>
-            <div class="legal-bar">
-                <div>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Terms of Service</a>
+        <div id="container">
+            <header>
+                <!-- Header portion -->
+                <div class="link-buttons">
+                    <a href="search_image.html">Images</a>
+                    <a href="search_advanced.html">Advanced Search</a>
                 </div>
-                <div class="legal">
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Terms of Service</a>
+            </header>
+
+            <main>
+                <!-- LOGO -->
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                
+                <!-- Search bar and buttons -->
+                <form action="https://google.com/search">
+                    <input id="search-bar" type="text" placeholder="Search on the web" name="q">
+                    <br>
+                    <input class="search-button" type="submit" value="Google Search">
+                    <input id="lucky" class="search-button" type="submit" value="I'm Feeling Lucky" name="btnI" data-ved="0ahUKEwiNm6S0jYLrAhXslnIEHYv2B30QnRsIDg">
+                </form>
+
+                <!-- Different Languages -->
+                <p>Google.com offered in: 
+                    <a href="https://www.google.de/">German</a>
+                    <a href="https://www.google.fr/">French</a>
+                    <a href="https://www.google.it/">Italian</a>
+                    <a href="https://www.google.ru/">Russian</a>
+                </p>
+            </main>
+
+            <footer>
+                <!-- TODO -->
+                <div id="location-bar">
+                    <!-- Just a placeholder -->
+                    United Kingdom
                 </div>
-            </div>
-        </footer>
+                <div id="info-bar">
+                    <span>
+                        <a href="https://ads.google.com">Advertising</a>
+                        <a href="https://google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwitpZaGncLuAhWaThUIHf8TDy8QktQCCBg&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Bussines</a>
+                        <a href="https://google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwitpZaGncLuAhWaThUIHf8TDy8QkNQCCBk&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-SE%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw0Z4xAXmgkRFwNZG4ci1haj">About</a>
+                        <a href="https://google.com/search/howsearchworks/?fg=1">How the search works</a>
+                    </span>
+                    <span id="legal">
+                        <a href="https://google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwitpZaGncLuAhWaThUIHf8TDy8Q8awCCBE&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den-SE%26fg%3D1&usg=AOvVaw3fhFRTKxxbGnkfKQPtvknU">Privacy</a>
+                        <a href="https://google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwitpZaGncLuAhWaThUIHf8TDy8Q8qwCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-SE%26fg%3D1&usg=AOvVaw1q76tPEgryA0f7rhNATsdx">Terms</a>
+                        <a href="https://google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwitpZaGncLuAhWaThUIHf8TDy8Qzq0CCBQ&url=https%3A%2F%2Fwww.google.com%2Fpreferences%3Fhl%3Den&usg=AOvVaw0XvhSqpc_GFt9aG_mRLp1F">Settings</a>
+                    </span>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

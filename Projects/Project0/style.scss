@@ -2,40 +2,97 @@ $link-color: black;
 $background-color: rgb(235, 235, 235);
 $border-color: rgb(200, 200, 200);
 
-// @media (max-width: 600px) {
-//     /* Mobile first */
-// }
+@media (max-width: 650px) {
+    /* Mobile first */
 
-// @media (min-width: 601px) {
-//     /* Desktop second */
-// }
+    // Tried a variable but it didn't work
+    // $button-height: 28px;
 
-// #container {
-//     display: grid;
-// }
+    main {
+        margin-top: 120px;
 
-// Template for search buttons
-%search-btn {
-    background-color: rgb(236, 236, 236);
-    margin: 25px 25px 0 0;
-    font-size: 14px;
-    border-radius: 4px;
-    min-width: 54px;
-    padding: 0 16px;
-    height: 36px;
-    border: none;
-    cursor: pointer;
+        img {
+            margin-bottom: 30px;
+            max-width: 200px;
+        }
+        
+        p {
+            margin-top: 16px;
+        }
+    }
+
+    footer {
+        font-size: 13px;
+    }
+    
+    #search-bar {
+        height: 32px;
+    }
+
+    .search-button {
+        height: 28px;
+    }
+    
+    #info-bar {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 651px) {
+    /* Desktop second */
+
+    main {
+        margin-top: 160px;
+
+        img {
+            margin-bottom: 30px;
+            width: auto;
+        }
+
+        p {
+            margin-top: 26px;
+        }
+    }
+
+    footer {
+        font-size: 16px;   
+    }
+
+    #search-bar {
+        height: 44px;
+    }
+
+    .search-button {
+        height: 34px;
+    }
+
+    #info-bar {
+        justify-content: space-between;
+    }
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    // min-height: 100%;
-    // position:relative;
+    background-color: white;
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
-.link-buttons {
-    text-align: right;
-    margin: 10px 20px 0 0;
+main {
+    text-align: center;
+    p {
+        font-size: 12px;
+    }
+    
+    a {
+        margin: 0 10px;
+    }
 }
 
 header {
@@ -43,28 +100,15 @@ header {
         color: black;
         padding: 10px;
         font-size: 13px;
-        text-decoration: none;
     }
     
-    a:hover {
-        text-decoration: underline;
-    }
-
-    div{
+    div {
         width: 100%;
     }
-}
 
-main {
-    margin-top: 210px;
-    text-align: center;
-
-    p {
-        font-size: 12px;
-    }
-
-    a {
-        margin: 0 10px;
+    .link-buttons {
+        text-align: right;
+        margin-top: 10px;
     }
 }
 
@@ -74,11 +118,19 @@ footer {
     bottom: 0;
     right: 0;
 
+    a {
+        color: gray;
+    }
+}
+
+#container {
+    padding: 0 20px 0 20px;
 }
 
 #search-bar {
-    width: 484px;
-    height: 44px;
+    width: 70%;
+    min-width: 380px;
+    max-width: 512px;
     border: 1px solid $border-color;
     border-radius: 24px;
     padding-left: 15px;
@@ -88,37 +140,53 @@ footer {
     box-shadow: 0 0 3px 1px gray;
 }
 
+// Template for search buttons
+// Used to have two classes for the buttons
+%search-btn {
+    background-color: rgb(236, 236, 236);
+    margin: 25px 25px 0 0;
+    font-size: 14px;
+    border-radius: 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    border: none;
+    cursor: pointer;
+}
+
 .search-button {
     @extend %search-btn;
 }
 
 .search-button:hover {
-    @extend %search-btn;
-    // border: 1px solid $border-color;
     box-shadow: 0 0 4px 2px $background-color;
 }
 
-img {
-    margin-bottom: 30px;
-}
-
 // Footer
-.location-bar, .legal-bar {
+%footer-bar {
     line-height: 40px;
-    padding-left: 26px;
     width: 100%;
+    padding-left: 26px;
     border-top: 1px solid rgb(180, 180, 180);
     background-color: $background-color;
-    // margin: auto -10px;
-    
-    .legal {
-        text-align: right;
-        margin-right: 26px;
-    }
+}
 
+#location-bar {
+    @extend %footer-bar;
+}
+
+#info-bar {
+    @extend %footer-bar;
+    display: flex;
+    flex-wrap: wrap;
+    
     a {
         padding-right: 12px;
     }
+    
+    #legal {
+        margin-right: 26px;
+        // used for testing
+        // float: right;
+        // background-color: lightblue;
+    }
 }
-
-// TODO last thing before the finished design, align properly the footer elements

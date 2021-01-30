@@ -84,6 +84,8 @@ body {
     }
 }
 
+.advanced-
+
 main {
     text-align: center;
     p {
@@ -92,6 +94,18 @@ main {
     
     a {
         margin: 0 10px;
+    }
+}
+
+.main-advanced {
+    text-align: left;
+    font-size: 13px;
+
+    form {
+        div {
+            display: inline;
+            line-height: 46px;
+        }
     }
 }
 
@@ -190,3 +204,24 @@ footer {
         // background-color: lightblue;
     }
 }
+
+.advanced-search-bar {
+    width: 50%;
+    display: inline-block;
+    // float: left;
+    min-width: 170px;
+    min-height: 30px;
+    // border: 0;
+    border-radius: 0;
+    background-color: $background-color;
+
+}
+
+.advanced-img {
+    margin-top: 26px;
+    max-width: 100px;
+}
+
+// TODO: too many modifications required for advanced search
+// Posibly another file need and another problem rising, how
+// to imherit some styling from this current file

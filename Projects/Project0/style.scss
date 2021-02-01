@@ -84,8 +84,6 @@ body {
     }
 }
 
-.advanced-
-
 main {
     text-align: center;
     p {
@@ -203,23 +201,6 @@ footer {
         // float: right;
         // background-color: lightblue;
     }
-}
-
-.advanced-search-bar {
-    width: 50%;
-    display: inline-block;
-    // float: left;
-    min-width: 170px;
-    min-height: 30px;
-    // border: 0;
-    border-radius: 0;
-    background-color: $background-color;
-
-}
-
-.advanced-img {
-    margin-top: 26px;
-    max-width: 100px;
 }
 
 // TODO: too many modifications required for advanced search

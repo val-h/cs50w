@@ -1,0 +1,138 @@
+$h-link-color: black;
+$button-bg: blue;
+$button-color: white;
+$background-color: rgb(235, 235, 235);
+$border-color: rgb(200, 200, 200);
+
+@media (max-width: 650px) {
+    main {
+        margin-top: 120px;
+
+        img {
+            margin-bottom: 30px;
+            max-width: 200px;
+        }
+        
+        p {
+            margin-top: 16px;
+        }
+    }
+
+    footer {
+        font-size: 13px;
+    }
+
+    #info-bar {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 651px) {
+    main {
+        margin-top: 160px;
+
+        img {
+            margin-bottom: 30px;
+            width: auto;
+        }
+
+        p {
+            margin-top: 26px;
+        }
+    }
+
+    footer {
+        font-size: 16px;   
+    }
+
+    #info-bar {
+        justify-content: space-between;
+    }
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+header {
+    text-align: right;
+    a{
+        padding: 10px;
+        color: $h-link-color;
+    }
+
+    img {
+        text-align: center;
+        margin-top: 26px;
+        max-width: 100px;
+    }
+
+
+    div {
+        width: 100%;
+    }
+
+}
+
+main {
+    font-size: 13px;
+    form {
+        div {
+            display: inline;
+        }
+    }
+}
+
+#container {
+    margin: 0 24px 0 24px;
+}
+
+.advanced-search-bar {
+    width: 50%;
+    display: inline-block;
+    // float: left;
+    min-width: 170px;
+    min-height: 30px;
+    // border: 0;
+    border-radius: 0;
+    background-color: $background-color;
+
+}
+
+%footer-bar {
+    line-height: 40px;
+    width: 100%;
+    padding-left: 26px;
+    border-top: 1px solid rgb(180, 180, 180);
+    background-color: $background-color;
+}
+
+#location-bar {
+    @extend %footer-bar;
+}
+
+#info-bar {
+    @extend %footer-bar;
+    display: flex;
+    flex-wrap: wrap;
+    
+    a {
+        padding-right: 12px;
+    }
+    
+    #legal {
+        margin-right: 26px;
+        // used for testing
+        // float: right;
+        // background-color: lightblue;
+    }
+}

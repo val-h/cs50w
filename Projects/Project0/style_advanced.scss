@@ -1,5 +1,5 @@
 $h-link-color: black;
-$button-bg: blue;
+$button-bg: rgb(41, 41, 228);
 $button-color: white;
 $background-color: rgb(235, 235, 235);
 $border-color: rgb(200, 200, 200);
@@ -51,7 +51,8 @@ $border-color: rgb(200, 200, 200);
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
     background-color: white;
     
     a {
@@ -65,13 +66,18 @@ body {
 
 header {
     text-align: right;
+    height: 44px;
     a{
+        position: static;
+        float: right;
+        // font-size: 13px;
         padding: 10px;
         color: $h-link-color;
     }
 
     img {
-        text-align: center;
+        position: relative;
+        float: left;
         margin-top: 26px;
         max-width: 100px;
     }
@@ -88,7 +94,21 @@ main {
     form {
         div {
             display: inline;
+            line-height: 52px;
         }
+    }
+}
+
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    a {
+        color: gray;
+        
     }
 }
 
@@ -135,4 +155,19 @@ main {
         // float: right;
         // background-color: lightblue;
     }
+}
+
+#search-button {
+    background-color: $button-bg;
+    color: $button-color;
+    padding: 10px 17px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+    float: right;
+}
+
+#search-button:hover {
+    box-shadow: 0 0 7px 3px lightblue;
 }

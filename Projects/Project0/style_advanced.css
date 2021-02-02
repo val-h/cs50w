@@ -39,7 +39,8 @@
   }
 }
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
   background-color: white;
 }
 body a {
@@ -51,13 +52,17 @@ body a:hover {
 
 header {
   text-align: right;
+  height: 44px;
 }
 header a {
+  position: static;
+  float: right;
   padding: 10px;
   color: black;
 }
 header img {
-  text-align: center;
+  position: relative;
+  float: left;
   margin-top: 26px;
   max-width: 100px;
 }
@@ -70,6 +75,17 @@ main {
 }
 main form div {
   display: inline;
+  line-height: 52px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+footer a {
+  color: gray;
 }
 
 #container {
@@ -102,6 +118,21 @@ main form div {
 }
 #info-bar #legal {
   margin-right: 26px;
+}
+
+#search-button {
+  background-color: #2929e4;
+  color: white;
+  padding: 10px 17px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+  float: right;
+}
+
+#search-button:hover {
+  box-shadow: 0 0 7px 3px lightblue;
 }
 
 /*# sourceMappingURL=style_advanced.css.map */

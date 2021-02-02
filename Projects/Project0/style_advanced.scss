@@ -1,5 +1,6 @@
 $h-link-color: black;
-$button-bg: rgb(41, 41, 228);
+$button-bg: #4d90fe;
+$button-border: #3079ed;
 $button-color: white;
 $background-color: rgb(235, 235, 235);
 $border-color: rgb(200, 200, 200);
@@ -53,7 +54,7 @@ $border-color: rgb(200, 200, 200);
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    background-color: white;
+    background-color: rgb(245, 245, 245);
     
     a {
         text-decoration: none;
@@ -86,19 +87,71 @@ header {
     div {
         width: 100%;
     }
-
 }
 
 main {
     font-size: 13px;
+    max-width: 1700px;
+    min-width: 360px;
     form {
-        div {
+        #flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            // justify-content: flex-end;
+        }
+
+        #labels {
+            line-height: 47px;
+            min-width: 150px;
+        }
+
+        #input {
             display: inline;
-            line-height: 52px;
+            line-height: 46px;
+            width: 100%;
+            padding: 0;
+            margin-left: 40px;
+        }
+        
+        .advanced-search-bar {
+            max-width: 1200px;
+            width: 100%;
+            // display: inline-block;
+            // float: left;
+            min-width: 170px;
+            min-height: 30px;
+            // height: 20px;
+            padding: 1px 8px;
+            // border: 0;
+            border-radius: 0;
+            background-color: white;
+        }
+        
+        #search-button {
+            background-color: $button-bg;
+            color: $button-color;
+            // margin: 0 15% 0 0;
+            padding: 10px 17px;
+            border: 1px solid $border-color;
+            // border-radius: 7px;
+            cursor: pointer;
+            text-align: right;
+
+            // experiments
+
+            // display: flex;
+            // justify-content: flex-end;
+            // position: relative;
+            // right: 0;
+            // float: right;
+        }
+        
+        #search-button:hover {
+            // to be replaced with gradient in the button
+            box-shadow: 0 0 7px 3px lightblue;
         }
     }
 }
-
 
 footer {
     position: absolute;
@@ -114,18 +167,6 @@ footer {
 
 #container {
     margin: 0 24px 0 24px;
-}
-
-.advanced-search-bar {
-    width: 50%;
-    display: inline-block;
-    // float: left;
-    min-width: 170px;
-    min-height: 30px;
-    // border: 0;
-    border-radius: 0;
-    background-color: $background-color;
-
 }
 
 %footer-bar {
@@ -155,19 +196,4 @@ footer {
         // float: right;
         // background-color: lightblue;
     }
-}
-
-#search-button {
-    background-color: $button-bg;
-    color: $button-color;
-    padding: 10px 17px;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    text-align: center;
-    float: right;
-}
-
-#search-button:hover {
-    box-shadow: 0 0 7px 3px lightblue;
 }

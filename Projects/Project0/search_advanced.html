@@ -17,18 +17,26 @@
             </header>
 
             <main class="main-advanced">
+                <!-- flexbox required -->
                 <form action="https://www.google.com/advanced_search">
                     <h3>Find pages with...</h3>
-                    <div>all these words: </div>
-                    <input class="advanced-search-bar" type="text"><br>
-                    <div>all these words: </div>
-                    <input class="advanced-search-bar" type="text"><br>
-                    <div>all these words: </div>
-                    <input class="advanced-search-bar" type="text"><br>
-                    <div>all these words: </div>
-                    <input class="advanced-search-bar" type="text"><br>
+                    <div id="flex-container">
+                        <div id="labels">
+                            <div>all these words:</div>
+                            <div>this exact word or phrase:</div>
+                            <div>any of these words:</div>
+                            <div>none of these words:</div>
 
-                    <input type="submit" id="search-button">
+                        </div>
+                        <div id="input">
+                            <input class="advanced-search-bar" type="text"><br>
+                            <input class="advanced-search-bar" type="text"><br>
+                            <input class="advanced-search-bar" type="text"><br>
+                            <input class="advanced-search-bar" type="text"><br>
+                            
+                            <input type="submit" id="search-button">
+                        </div>
+                    </div>
                 </form>
             </main>
 

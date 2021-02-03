@@ -72,28 +72,28 @@ header div {
 
 main {
   font-size: 13px;
-  max-width: 1700px;
-  min-width: 360px;
 }
 main form #flex-container {
   display: flex;
   flex-wrap: nowrap;
+  max-width: 1400px;
 }
 main form #labels {
   line-height: 47px;
   min-width: 150px;
 }
 main form #input {
-  display: inline;
   line-height: 46px;
-  width: 100%;
+  width: 70%;
   padding: 0;
   margin-left: 40px;
 }
-main form .advanced-search-bar {
+main form #input div {
+  text-align: right;
+}
+main form #input .advanced-search-bar {
   max-width: 1200px;
   width: 100%;
-  min-width: 170px;
   min-height: 30px;
   padding: 1px 8px;
   border-radius: 0;
@@ -102,10 +102,10 @@ main form .advanced-search-bar {
 main form #search-button {
   background-color: #4d90fe;
   color: white;
+  margin: 0;
   padding: 10px 17px;
   border: 1px solid #c8c8c8;
   cursor: pointer;
-  text-align: right;
 }
 main form #search-button:hover {
   box-shadow: 0 0 7px 3px lightblue;

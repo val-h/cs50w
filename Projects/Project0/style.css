@@ -67,23 +67,15 @@ body a:hover {
   text-decoration: underline;
 }
 
-.advanced- main {
+main {
   text-align: center;
+  margin-bottom: 120px;
 }
-.advanced- main p {
+main p {
   font-size: 12px;
 }
-.advanced- main a {
+main a {
   margin: 0 10px;
-}
-
-.main-advanced {
-  text-align: left;
-  font-size: 13px;
-}
-.main-advanced form div {
-  display: inline;
-  line-height: 46px;
 }
 
 header a {
@@ -100,7 +92,7 @@ header .link-buttons {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   right: 0;
@@ -158,20 +150,6 @@ footer a {
 }
 #info-bar #legal {
   margin-right: 26px;
-}
-
-.advanced-search-bar {
-  width: 50%;
-  display: inline-block;
-  min-width: 170px;
-  min-height: 30px;
-  border-radius: 0;
-  background-color: #ebebeb;
-}
-
-.advanced-img {
-  margin-top: 26px;
-  max-width: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

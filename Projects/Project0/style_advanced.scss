@@ -91,6 +91,7 @@ header {
 
 main {
     font-size: 13px;
+    margin-bottom: 120px;
     form {
         #flex-container {
             display: flex;
@@ -159,7 +160,7 @@ main {
 // Fix the footer position and figure out the why
 // css is not affecting the other pages
 footer {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     right: 0;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nasa API</title>
+
+        <script>
+            // First load the document.
+            document.addEventListener('DOMContentLoaded', () => {
+
+                // fetch the nasa api
+                fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+
+                    document.querySelector('#image').src = data['url'];
+                })
+                .catch(error => {
+                    console.log('Error: ', error)
+                })
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <h1>Nasa api stuff</h1>
+        <img id="image">
+    </body>
+</html>

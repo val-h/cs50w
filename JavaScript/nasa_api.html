@@ -13,18 +13,24 @@
                 .then(data => {
                     console.log(data);
 
-                    document.querySelector('#image').src = data['url'];
+                    document.querySelector('#title').innerHTML = data['title'];
+                    document.querySelector('#date').innerHTML = data['date'];
+                    document.querySelector('#desc').innerHTML = data ['explanation'];
+                    document.querySelector('#image').src = data['hdurl'];
                 })
                 .catch(error => {
                     console.log('Error: ', error)
                 })
             });
-
         </script>
 
     </head>
     <body>
-        <h1>Nasa api stuff</h1>
-        <img id="image">
+        <div style="text-align: center;">
+            <h1 id="title"></h1>
+            <h3 id="date"></h3>
+        </div>
+        <img style="max-width: 1600px;" id="image">
+        <p id="desc"></p>
     </body>
 </html>

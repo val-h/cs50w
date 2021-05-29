@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Counter</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            let counter = 0;
+
+            // if (localStorage.getItem('counter')) {
+            //     counter = localStorage.getItem('counter');
+            // } else {
+            //     counter = 0;
+            //     localStorage.setItem('counter', counter);
+            // }
+
+            document.querySelector('h1').innerHTML = counter;
+
+            document.querySelector('#increase').onclick = () => {
+                counter++;
+                // localStorage.setItem('counter', counter);
+                document.querySelector('h1').innerHTML = counter;
+            };
+
+            document.querySelector('#decrease').onclick = () => {
+                counter--;
+                // localStorage.setItem('counter', counter);
+                document.querySelector('h1').innerHTML = counter;
+            }
+
+        });
+    </script>
+
+</head>
+<body>
+    <h1>0</h1>
+    <button id="increase">+</button>
+    <button id="decrease">-</button>
+</body>
+</html>

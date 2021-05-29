@@ -1,9 +1,9 @@
-from django.db.models import Max
+# from django.db.models import Max
 from django.test import TestCase, Client
 
 from .models import Airport, Flight, Passenger
 
-# Create your tests here.
+
 class FlightTestCase(TestCase):
 
     # Setup function for dummy db
@@ -16,7 +16,7 @@ class FlightTestCase(TestCase):
         Flight.objects.create(origin=a1, destination=a2, duration=100)
         Flight.objects.create(origin=a1, destination=a1, duration=120)
         Flight.objects.create(origin=a1, destination=a2, duration=-5)
-        
+
     def test_departures_count(self):
         a = Airport.objects.get(code='AAA')
         self.assertEqual(a.departures.count(), 3)
@@ -82,3 +82,4 @@ class FlightTestCase(TestCase):
         response = c.get(f'/flights/{f.id}')
         self.assertEqual(response.status_code, 200)
         self.assertFalse(f.passengers.count(), 1)
+        self.assertEqual(p.first, 'John')

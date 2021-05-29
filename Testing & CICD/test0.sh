@@ -1,0 +1,5 @@
+python3 -c 'from test0 import test_prime; print("Running test_prime(2, True)");test_prime(2, True)'
+python3 -c 'from test0 import test_prime; print("Running test_prime(5, True)");test_prime(5, True)'
+python3 -c 'from test0 import test_prime; print("Running test_prime(10, False)");test_prime(10, False)'
+python3 -c 'from test0 import test_prime; print("Running test_prime(19, True)");test_prime(19, True)'
+python3 -c 'from test0 import test_prime; print("Running test_prime(25, False)");test_prime(25, False)'
